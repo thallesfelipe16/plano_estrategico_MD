@@ -458,6 +458,30 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
 .speed-item:last-child{border-bottom:none;}
 .speed-now .speed-item::before{content:'→';position:absolute;left:0;color:#4ade80;font-size:10px;top:6px;}
 .speed-later .speed-item::before{content:'→';position:absolute;left:0;color:var(--blue);font-size:10px;top:6px;}
+
+.risk-table{width:100%;border-collapse:collapse;margin-bottom:20px;font-size:12.5px;}
+.risk-table th{padding:10px 12px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--orange4);text-align:left;font-weight:700;}
+.risk-table td{padding:11px 12px;border-bottom:1px solid var(--border2);color:rgba(240,236,228,.85);vertical-align:top;line-height:1.55;}
+.risk-table tr:hover td{background:rgba(255,255,255,.02);}
+.risk-alto{background:rgba(239,68,68,.12)!important;}.risk-medio{background:rgba(245,158,11,.08)!important;}.risk-baixo{background:rgba(34,197,94,.06)!important;}
+.avoid-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;}
+.avoid-card{background:var(--red-bg);border:1px solid var(--red-bd);border-radius:10px;padding:18px;}
+.safe-card{background:var(--green-bg);border:1px solid var(--green-bd);border-radius:10px;padding:18px;}
+.avoid-card h5{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#f87171;font-weight:700;margin-bottom:12px;}
+.safe-card h5{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#4ade80;font-weight:700;margin-bottom:12px;}
+.avoid-item{font-size:12.5px;color:rgba(240,236,228,.8);padding:4px 0 4px 18px;position:relative;border-bottom:1px solid rgba(239,68,68,.1);}
+.avoid-item:last-child{border-bottom:none;}
+.avoid-item::before{content:'×';position:absolute;left:0;color:#f87171;font-weight:700;font-size:12px;}
+.safe-item{font-size:12.5px;color:rgba(240,236,228,.8);padding:4px 0 4px 18px;position:relative;border-bottom:1px solid rgba(34,197,94,.1);}
+.safe-item:last-child{border-bottom:none;}
+.safe-item::before{content:'✓';position:absolute;left:0;color:#4ade80;font-weight:700;font-size:12px;}
+.ad-block{background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:18px;margin-bottom:10px;}
+.ad-platform{font-size:9px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:8px;}
+.ad-meta{color:var(--blue);}.ad-google{color:#4ade80;}
+.ad-row{display:flex;gap:8px;margin-bottom:6px;flex-wrap:wrap;}
+.ad-label{font-size:10px;color:var(--muted);min-width:80px;padding-top:2px;}
+.ad-value{font-size:13px;color:var(--cream);font-weight:500;}
+.ad-title-v{font-size:12px;color:var(--orange2);font-weight:600;}
 </style>
 </head>
 <body>
@@ -763,7 +787,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
   <div class="eyebrow" style="margin-bottom:20px;">Proposta Única de Valor</div>
   <div class="puv-box">
     <div class="puv-label">Proposta Única de Valor — Colégio Madre de Deus</div>
-    <div class="puv-text">A única escola de Recife que combina<br><em>base sólida, excelência acadêmica</em><br>e portas abertas para o mundo.</div>
+    <div class="puv-text">O Madre une base sólida, acompanhamento próximo e preparação acadêmica<br>do Infantil ao EM — com <em>caminhos para o Brasil e o mundo.</em></div>
     <p class="puv-sub">Para famílias que não querem escolher entre uma escola que cuida do aluno e uma escola que aprova — o Madre entrega os dois. Com história, método e resultados comprovados.</p>
     <div class="puv-pillars">
       <div class="puv-pillar">
@@ -937,6 +961,34 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
     <div class="hl-label">Insight de persona</div>
     <div class="hl-text">Cada persona precisa de mensagem diferente no canal certo. A Dra. Carla quer ver aprovados em medicina no Google. O Carlos quer encontrar o Madre no Google Maps. A Ana Paula quer o caso da Val em destaque no site. O Madre tem conteúdo para satisfazer os três — mas usa o mesmo material genérico para todos.</div>
   </div>
+
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Personas adicionais</div>
+  <div class="g2">
+    <div class="persona-card">
+      <div class="persona-head">
+        <div class="pa" style="background:rgba(236,72,153,.15);">👩</div>
+        <div><div class="pname">Marina, 34 anos</div><div class="psub">Mãe de criança de 2 anos · Boa Viagem ou Zona Norte</div></div>
+      </div>
+      <div class="psec"><div class="ptitle">Contexto</div><p style="font-size:13px;color:var(--muted);line-height:1.6;">Trabalha em tempo integral, está escolhendo a primeira escola do filho. Insegura porque é a primeira experiência escolar da criança. Para ela, aprovação ainda não é argumento. O que vende é confiança e acolhimento.</p></div>
+      <div class="psec"><div class="ptitle">Medos</div><div class="ptags"><span class="ptag fear">A criança não se adaptar</span><span class="ptag fear">Ambiente frio ou grande demais</span><span class="ptag fear">Pouca comunicação com a escola</span><span class="ptag fear">Falta de cuidado individual</span></div></div>
+      <div class="psec"><div class="ptitle">O que precisa ver</div><div class="ptags"><span class="ptag want">Rotina da Educação Infantil</span><span class="ptag want">Fotos e vídeos reais dos espaços</span><span class="ptag want">Depoimentos de mães</span><span class="ptag want">Segurança e adaptação</span></div></div>
+      <div class="psec"><div class="ptitle">Canais</div><div class="ptags"><span class="ptag ch">Instagram</span><span class="ptag ch">Google Maps</span><span class="ptag ch">Indicação de mães</span><span class="ptag ch">Grupos de WhatsApp</span></div></div>
+      <div class="pquote">"Os primeiros anos precisam de acolhimento, segurança e estímulos certos. No Madre, a base começa com cuidado."</div>
+      <div style="margin-top:12px;padding:8px 12px;background:var(--amber-bg);border-radius:6px;font-size:11px;color:var(--amber);">⚠️ No Meta Ads: nunca usar "você que tem filho de 2 anos" — viola política de atributos pessoais. Usar: "proposta para crianças a partir de 2 anos."</div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-head">
+        <div class="pa" style="background:rgba(139,92,246,.15);">👨‍👩‍👦</div>
+        <div><div class="pname">Ricardo & Fernanda, 42–50 anos</div><div class="psub">Pais de adolescente no EM · Boa Viagem / Tamarineira</div></div>
+      </div>
+      <div class="psec"><div class="ptitle">Contexto</div><p style="font-size:13px;color:var(--muted);line-height:1.6;">Decisão mais racional e competitiva. Estão comparando Madre, Cognitivo, GGE e Núcleo. Querem resultado no SSA/ENEM/Medicina/ITA e possibilidades internacionais, mas têm receio de escola excessivamente conteudista que pressione demais.</p></div>
+      <div class="psec"><div class="ptitle">Medos</div><div class="ptags"><span class="ptag fear">Filho perder competitividade</span><span class="ptag fear">Ritmo acadêmico insuficiente</span><span class="ptag fear">Falta de orientação individual</span><span class="ptag fear">Pressão excessiva</span></div></div>
+      <div class="psec"><div class="ptitle">O que precisa ver</div><div class="ptags"><span class="ptag want">Simulados e resultados reais</span><span class="ptag want">MD Medicina e MD ITA</span><span class="ptag want">High School Internacional</span><span class="ptag want">Depoimentos de ex-alunos</span></div></div>
+      <div class="psec"><div class="ptitle">Canais</div><div class="ptags"><span class="ptag ch">Google</span><span class="ptag ch">YouTube</span><span class="ptag ch">Instagram</span><span class="ptag ch">Visita presencial</span></div></div>
+      <div class="pquote">"No Ensino Médio, método e acompanhamento fazem diferença. O Madre prepara para grandes desafios sem abrir mão da formação humana."</div>
+    </div>
+  </div>
 </section>
 
 <!-- ⑤ MESSAGING -->
@@ -1008,6 +1060,141 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
     <div>
       <div class="copy-ex"><div class="copy-ctx">Campanha retenção — nova versão</div><div class="copy-body"><strong>O Ensino Médio não começa no 1º ano.</strong><br>Começa na base, no método, na rotina e em uma escola que já conhece a trajetória do seu filho.<br><br>— Alternativa mais propositiva do que "não troque quem te conhece"</div></div>
       <div class="copy-ex"><div class="copy-ctx">Campanha High School Internacional</div><div class="copy-body"><strong>O mundo também é uma possibilidade.</strong><br>High School Internacional, preparação acadêmica e histórias reais de alunos aprovados no Brasil e no exterior.<br><br>→ Conheça o programa</div></div>
+    </div>
+  </div>
+
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Compliance de Anúncios — Meta & Google</div>
+  <div style="background:var(--amber-bg);border:1px solid var(--amber-bd);border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:rgba(240,236,228,.85);">
+    ⚠️ <strong style="color:var(--amber);">O problema não está em falar de aprovação.</strong> Está em promessas absolutas, comparativos não comprovados e linguagem que parece garantia de resultado. Meta proíbe presumir atributos pessoais do usuário (ex: "você que tem filho de 2 anos"). Google proíbe claims improváveis e estatísticas sem fonte.
+  </div>
+
+  <div style="overflow-x:auto;margin-bottom:28px;">
+  <table class="risk-table">
+    <thead><tr><th>Frase atual</th><th>Risco</th><th>Por quê</th><th>Substituta segura</th></tr></thead>
+    <tbody>
+      <tr class="risk-alto"><td><strong>"A única escola de Recife que combina…"</strong></td><td><span class="badge b-red">Alto</span></td><td>"Única" exige prova objetiva e auditável. Concorrentes podem contestar.</td><td>"Uma escola completa em Recife, com base sólida, excelência acadêmica e caminhos para o Brasil e o mundo."</td></tr>
+      <tr class="risk-alto"><td><strong>"Nenhum concorrente de Recife tem isso."</strong></td><td><span class="badge b-red">Alto</span></td><td>Comparativo absoluto difícil de provar juridicamente.</td><td>"Um diferencial que fortalece a jornada acadêmica dos alunos."</td></tr>
+      <tr class="risk-alto"><td><strong>"99% das escolas de Recife não têm isso."</strong></td><td><span class="badge b-red">Alto</span></td><td>Estatística sem fonte pública pode ser considerada enganosa.</td><td>"Um diferencial ainda pouco comum no mercado local."</td></tr>
+      <tr class="risk-medio"><td><strong>"Formamos alunos aprovados nas melhores universidades…"</strong></td><td><span class="badge b-amber">Médio</span></td><td>Pode usar, mas somente com nomes reais e autorização de uso de imagem/dados.</td><td>"Alunos do Madre já chegaram a UFPE, UNICAMP, Pepperdine e University of Colorado Boulder."</td></tr>
+      <tr class="risk-medio"><td><strong>"Não troque quem te conhece por quem te promete."</strong></td><td><span class="badge b-amber">Médio</span></td><td>Pode parecer ataque indireto aos concorrentes em peças pagas.</td><td>"O próximo ciclo começa melhor quando a escola já conhece a trajetória do seu filho."</td></tr>
+      <tr class="risk-medio"><td><strong>"Portas abertas para o mundo."</strong></td><td><span class="badge b-amber">Médio</span></td><td>Pode soar como garantia se junto a aprovação internacional.</td><td>"Caminhos acadêmicos para o Brasil e o exterior."</td></tr>
+      <tr class="risk-medio"><td><strong>"Você que quer Medicina para seu filho."</strong></td><td><span class="badge b-amber">Médio</span></td><td>Meta restringe anúncios que presumem atributos pessoais ou familiares do usuário.</td><td>"Preparação acadêmica para estudantes que buscam grandes desafios."</td></tr>
+      <tr class="risk-baixo"><td><strong>"O Ensino Médio começa antes do Ensino Médio."</strong></td><td><span class="badge b-green">Baixo</span></td><td>Boa frase conceitual. Pode manter em anúncios.</td><td>Pode usar como está.</td></tr>
+      <tr class="risk-baixo"><td><strong>"A aprovação começa na base."</strong></td><td><span class="badge b-green">Baixo</span></td><td>Tese de marca, não promessa literal. Pode usar com sustentação institucional.</td><td>"Grandes conquistas começam com uma base bem construída."</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="eyebrow" style="margin-bottom:14px;">Promessa central revisada — segura para tráfego pago</div>
+  <div style="background:linear-gradient(135deg,rgba(21,34,64,.9),rgba(240,112,32,.06));border:2px solid var(--orange4);border-radius:14px;padding:28px 36px;margin-bottom:28px;">
+    <div style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:14px;">Nova promessa oficial — Meta & Google approved</div>
+    <div style="font-family:'Montserrat',sans-serif;font-size:clamp(15px,2vw,20px);font-weight:700;color:#fff;line-height:1.5;margin-bottom:14px;">Grandes conquistas começam com uma base bem construída. Do Infantil ao Ensino Médio, o Madre une acolhimento, formação acadêmica e acompanhamento próximo para preparar alunos para os desafios do Brasil e do mundo.</div>
+    <div class="g2" style="margin-top:14px;">
+      <div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#4ade80;font-weight:700;margin-bottom:8px;">✓ Por que é mais segura</div>
+        <div style="font-size:12px;color:rgba(240,236,228,.75);line-height:1.7;">Não usa "única" · Não promete aprovação · Não ataca concorrentes · Não exagera resultados · Mantém força comercial · Conversa com todos os ciclos</div>
+      </div>
+      <div>
+        <div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:8px;">Verbos recomendados para anúncios</div>
+        <div style="font-size:12px;color:rgba(240,236,228,.75);line-height:1.7;"><strong style="color:var(--orange2);">Usar:</strong> prepara · forma · acompanha · constrói · orienta · desenvolve · estimula<br><strong style="color:#f87171;">Evitar como verbo principal:</strong> aprova · garante · assegura</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eyebrow" style="margin-bottom:14px;">Copy segura — Meta Ads</div>
+  <div class="g2" style="margin-bottom:24px;">
+    <div>
+      <div class="ad-block">
+        <div class="ad-platform ad-meta">Meta Ads — Anúncio Institucional</div>
+        <div class="ad-row"><div class="ad-label">Texto:</div><div class="ad-value">No Madre de Deus, cada etapa da vida escolar é construída com cuidado, método e acompanhamento próximo. Da Educação Infantil ao Ensino Médio, a formação acadêmica caminha junto com o desenvolvimento humano.</div></div>
+        <div class="ad-row"><div class="ad-label">Título:</div><div class="ad-title-v">Grandes conquistas começam na base</div></div>
+        <div class="ad-row"><div class="ad-label">Descrição:</div><div class="ad-value">Conheça o Colégio Madre de Deus e agende uma visita.</div></div>
+      </div>
+      <div class="ad-block">
+        <div class="ad-platform ad-meta">Meta Ads — Educação Infantil</div>
+        <div class="ad-row"><div class="ad-label">Texto:</div><div class="ad-value">Os primeiros anos são decisivos para desenvolver autonomia, linguagem, socialização, curiosidade e segurança emocional. No Madre de Deus, a Educação Infantil acolhe e estimula cada criança em uma jornada de descobertas.</div></div>
+        <div class="ad-row"><div class="ad-label">Título:</div><div class="ad-title-v">Educação Infantil no Madre de Deus</div></div>
+        <div class="ad-row"><div class="ad-label">Descrição:</div><div class="ad-value">Conheça a proposta para crianças a partir de 2 anos.</div></div>
+        <div style="margin-top:8px;padding:6px 10px;background:var(--amber-bg);border-radius:6px;font-size:11px;color:var(--amber);">⚠️ Evitar "seu filho de 2 anos" — usar "crianças a partir de 2 anos"</div>
+      </div>
+    </div>
+    <div>
+      <div class="ad-block">
+        <div class="ad-platform ad-meta">Meta Ads — Ensino Médio</div>
+        <div class="ad-row"><div class="ad-label">Texto:</div><div class="ad-value">O Ensino Médio do Madre reúne preparação acadêmica, orientação, simulados, projetos especiais e acompanhamento da trajetória do aluno. Uma formação pensada para quem busca grandes desafios no Brasil e no exterior.</div></div>
+        <div class="ad-row"><div class="ad-label">Título:</div><div class="ad-title-v">Ensino Médio com método e acompanhamento</div></div>
+        <div class="ad-row"><div class="ad-label">Descrição:</div><div class="ad-value">Agende uma visita e conheça a proposta.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="eyebrow" style="margin-bottom:14px;">Copy segura — Google Ads</div>
+  <div class="g2" style="margin-bottom:24px;">
+    <div>
+      <div class="ad-block">
+        <div class="ad-platform ad-google">Google Ads — Colégio em Recife</div>
+        <div class="ad-row"><div class="ad-label">T1:</div><div class="ad-title-v">Colégio Madre de Deus Recife</div></div>
+        <div class="ad-row"><div class="ad-label">T2:</div><div class="ad-title-v">Do Infantil ao Ensino Médio</div></div>
+        <div class="ad-row"><div class="ad-label">T3:</div><div class="ad-title-v">Agende uma Visita</div></div>
+        <div class="ad-row"><div class="ad-label">Desc:</div><div class="ad-value">Formação acadêmica, acompanhamento próximo e projetos para cada etapa da vida escolar. Conheça as unidades.</div></div>
+      </div>
+      <div class="ad-block">
+        <div class="ad-platform ad-google">Google Ads — Educação Infantil</div>
+        <div class="ad-row"><div class="ad-label">T1:</div><div class="ad-title-v">Educação Infantil em Recife</div></div>
+        <div class="ad-row"><div class="ad-label">T2:</div><div class="ad-title-v">A partir de 2 anos</div></div>
+        <div class="ad-row"><div class="ad-label">T3:</div><div class="ad-title-v">Colégio Madre de Deus</div></div>
+        <div class="ad-row"><div class="ad-label">Desc:</div><div class="ad-value">Ambiente acolhedor, desenvolvimento integral e acompanhamento próximo nos primeiros anos da vida escolar.</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="ad-block">
+        <div class="ad-platform ad-google">Google Ads — Ensino Médio</div>
+        <div class="ad-row"><div class="ad-label">T1:</div><div class="ad-title-v">Ensino Médio Madre de Deus</div></div>
+        <div class="ad-row"><div class="ad-label">T2:</div><div class="ad-title-v">Preparação Acadêmica</div></div>
+        <div class="ad-row"><div class="ad-label">T3:</div><div class="ad-title-v">Conheça a Proposta</div></div>
+        <div class="ad-row"><div class="ad-label">Desc:</div><div class="ad-value">Simulados, orientação, projetos especiais e acompanhamento para uma trajetória acadêmica consistente.</div></div>
+      </div>
+      <div class="ad-block">
+        <div class="ad-platform ad-google">Google Ads — High School</div>
+        <div class="ad-row"><div class="ad-label">T1:</div><div class="ad-title-v">High School em Recife</div></div>
+        <div class="ad-row"><div class="ad-label">T2:</div><div class="ad-title-v">Caminhos para o Exterior</div></div>
+        <div class="ad-row"><div class="ad-label">T3:</div><div class="ad-title-v">Colégio Madre de Deus</div></div>
+        <div class="ad-row"><div class="ad-label">Desc:</div><div class="ad-value">Programa internacional e possibilidades acadêmicas para alunos do Ensino Médio no Brasil e no exterior.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="avoid-grid">
+    <div class="avoid-card">
+      <h5>× Nunca usar em anúncios</h5>
+      <div class="avoid-item">"a única escola de Recife"</div>
+      <div class="avoid-item">"a melhor escola"</div>
+      <div class="avoid-item">"a escola que mais aprova"</div>
+      <div class="avoid-item">"garantia de aprovação"</div>
+      <div class="avoid-item">"aprovação garantida"</div>
+      <div class="avoid-item">"nenhum concorrente tem"</div>
+      <div class="avoid-item">"99% das escolas não têm"</div>
+      <div class="avoid-item">"seu filho vai passar"</div>
+      <div class="avoid-item">"seu filho está ficando para trás"</div>
+      <div class="avoid-item">"não perca anos na escola errada"</div>
+      <div class="avoid-item">"pais preocupados com o futuro do filho"</div>
+      <div class="avoid-item">"você que tem filho de 2 anos"</div>
+      <div class="avoid-item">"você que quer Medicina para seu filho"</div>
+    </div>
+    <div class="safe-card">
+      <h5>✓ Frases aprovadas — fortes e seguras</h5>
+      <div class="safe-item">Grandes conquistas começam com uma base bem construída.</div>
+      <div class="safe-item">Da Educação Infantil ao Ensino Médio, cada etapa importa.</div>
+      <div class="safe-item">Formação humana, acompanhamento próximo e preparação acadêmica.</div>
+      <div class="safe-item">Uma trajetória completa, do primeiro aprendizado aos grandes desafios.</div>
+      <div class="safe-item">Caminhos acadêmicos para o Brasil e o exterior.</div>
+      <div class="safe-item">Base sólida para uma vida escolar mais segura e consistente.</div>
+      <div class="safe-item">Ensino Médio com método, orientação e acompanhamento.</div>
+      <div class="safe-item">High School, preparação acadêmica e possibilidades internacionais.</div>
+      <div class="safe-item">Proposta para crianças a partir de 2 anos.</div>
+      <div class="safe-item">Preparação para estudantes que buscam grandes desafios.</div>
+      <div class="safe-item">Programa para famílias que valorizam formação completa.</div>
     </div>
   </div>
 </section>
