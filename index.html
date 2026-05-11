@@ -415,6 +415,49 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
 
 .sc-rational 
 .sc-emocional 
+
+.arch-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0;}
+.arch-card{border-radius:14px;padding:26px;position:relative;overflow:hidden;}
+.arch-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;}
+.arch-1{background:rgba(96,165,250,.08);border:1px solid rgba(96,165,250,.2);}.arch-1::before{background:var(--blue);}
+.arch-2{background:var(--orange3);border:1px solid var(--orange4);}.arch-2::before{background:var(--orange);}
+.arch-3{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);}.arch-3::before{background:var(--green);}
+.arch-num{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:10px;}
+.arch-1 .arch-num{color:var(--blue);}.arch-2 .arch-num{color:var(--orange);}.arch-3 .arch-num{color:var(--green);}
+.arch-title{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:800;color:#fff;margin-bottom:8px;letter-spacing:-.01em;}
+.arch-segment{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;}
+.arch-1 .arch-segment{color:rgba(96,165,250,.7);}.arch-2 .arch-segment{color:var(--orange2);}.arch-3 .arch-segment{color:rgba(34,197,94,.7);}
+.arch-items{list-style:none;}.arch-item{font-size:12.5px;color:var(--muted);padding:3px 0 3px 14px;position:relative;}.arch-item::before{content:'→';position:absolute;left:0;font-size:10px;top:5px;}
+.arch-1 .arch-item::before{color:var(--blue);}.arch-2 .arch-item::before{color:var(--orange);}.arch-3 .arch-item::before{color:var(--green);}
+.funnel-stage{background:var(--s1);border:1px solid var(--border2);border-radius:10px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;gap:16px;flex-wrap:wrap;}
+.fs-name{font-size:13px;font-weight:600;color:#fff;flex:1;}
+.fs-meta{font-size:12px;color:var(--muted);}
+.fs-rate{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;padding:3px 10px;border-radius:20px;}
+.fs-ok{background:var(--green-bg);color:#4ade80;border:1px solid var(--green-bd);}
+.fs-warn{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd);}
+.media-table{width:100%;border-collapse:collapse;margin-bottom:20px;}
+.media-table th{padding:10px 14px;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);border-bottom:1px solid var(--orange4);text-align:left;font-weight:700;}
+.media-table td{padding:11px 14px;font-size:12.5px;border-bottom:1px solid var(--border2);color:rgba(240,236,228,.8);vertical-align:top;line-height:1.5;}
+.media-table tr:hover td{background:rgba(255,255,255,.02);}
+.idea-card{background:var(--s1);border:1px solid var(--border2);border-radius:12px;padding:22px;margin-bottom:12px;display:flex;gap:16px;}
+.idea-num{width:36px;height:36px;border-radius:50%;background:var(--orange3);border:1px solid var(--orange4);color:var(--orange);font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.idea-name{font-size:14px;font-weight:700;color:#fff;margin-bottom:5px;}
+.idea-desc{font-size:13px;color:var(--muted);line-height:1.6;}
+.idea-tag{display:inline-block;margin-top:8px;padding:2px 10px;border-radius:20px;font-size:10px;font-weight:600;background:var(--orange3);color:var(--orange);border:1px solid var(--orange4);}
+.data-stat{background:var(--s1);border:1px solid var(--border2);border-radius:10px;padding:16px;text-align:center;}
+.data-val{font-family:'Montserrat',sans-serif;font-size:24px;font-weight:800;color:var(--orange2);letter-spacing:-.02em;margin-bottom:4px;}
+.data-label{font-size:11px;color:var(--muted);line-height:1.4;}
+.two-speed{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+.speed-card{border-radius:12px;padding:22px;}
+.speed-now{background:var(--green-bg);border:1px solid var(--green-bd);}
+.speed-later{background:var(--blue-bg);border:1px solid var(--blue-bd);}
+.speed-label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:8px;}
+.speed-now .speed-label{color:#4ade80;}.speed-later .speed-label{color:var(--blue);}
+.speed-title{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;}
+.speed-item{font-size:12.5px;color:rgba(240,236,228,.8);padding:4px 0 4px 14px;position:relative;border-bottom:1px solid rgba(255,255,255,.05);}
+.speed-item:last-child{border-bottom:none;}
+.speed-now .speed-item::before{content:'→';position:absolute;left:0;color:#4ade80;font-size:10px;top:6px;}
+.speed-later .speed-item::before{content:'→';position:absolute;left:0;color:var(--blue);font-size:10px;top:6px;}
 </style>
 </head>
 <body>
@@ -503,6 +546,7 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
       <div class="swot-row"><span class="sdot"></span><div><strong>"Escola de medicina" como nicho não ocupado:</strong> Nenhum concorrente de Recife tem o claim consolidado. O Madre tem a OBB, o MD Medicina e as aprovações.</div></div>
       <div class="swot-row"><span class="sdot"></span><div><strong>Internacionalização como diferencial único:</strong> High School + aprovações nos EUA. Nenhum colégio de médio porte em Recife tem isso. Abre público de famílias globais.</div></div>
       <div class="swot-row"><span class="sdot"></span><div><strong>Vagas olímpicas diretas via OBB:</strong> Medalhistas entram em USP, UNICAMP e UNESP sem vestibular. Esse argumento sozinho justifica a mensalidade para famílias de alta renda.</div></div>
+      <div class="swot-row"><span class="sdot"></span><div><strong>Queda de matrículas no mercado nacional:</strong> Censo Escolar 2025 registrou 46M de estudantes — queda de 2,29% vs 2024 (1,08M a menos). Para o Madre, isso significa que o crescimento virá de <em>roubar share dos concorrentes e reter melhor</em>, não de expansão orgânica do mercado.</div></div>
       <div class="swot-row"><span class="sdot"></span><div><strong>Zona Norte com foco no Infantil e Fundamental:</strong> Tamarineira e Dois Unidos atendem da Educação Infantil ao Fundamental II — com concorrentes presentes, mas sem rivais que cubram esse segmento com a mesma qualidade e profundidade do Madre.</div></div>
       <div class="swot-row"><span class="sdot"></span><div><strong>Heitor e Val são campanhas prontas:</strong> Dois personagens reais, histórias extraordinárias. Precisam ser amplificados, não arquivados.</div></div>
     </div>
@@ -619,6 +663,52 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
   <div class="risk-card"><div class="risk-num">3</div><div><div class="risk-title">Depender só do resultado de 2021</div><div class="risk-body">O 1º lugar histórico no SSA-1 é poderoso, mas o mercado pergunta "E hoje?"</div><div class="risk-fix">Criar linha do tempo contínua: 2023, 2024, 2025 e resultados mais recentes disponíveis.</div></div></div>
   <div class="risk-card"><div class="risk-num">4</div><div><div class="risk-title">Virar comunicação de cursinho</div><div class="risk-body">O Madre não pode parecer frio ou conteudista — perderia sua identidade única de acolhimento.</div><div class="risk-fix">Equilibrar resultado acadêmico com formação humana, tradição e acompanhamento.</div></div></div>
   <div class="risk-card"><div class="risk-num">5</div><div><div class="risk-title">Não envolver a equipe interna</div><div class="risk-body">Se ficar só no marketing, perde força. Secretaria, coordenadores e professores precisam repetir a mesma narrativa.</div><div class="risk-fix">Treinar toda a equipe: "No Madre, a aprovação começa na base."</div></div></div>
+
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Arquitetura de mensagem comercial</div>
+  <div style="background:var(--s2);border:2px solid var(--orange4);border-radius:14px;padding:28px 36px;text-align:center;margin-bottom:20px;">
+    <div style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:12px;">Conceito guarda-chuva comercial</div>
+    <div style="font-family:'Montserrat',sans-serif;font-size:clamp(18px,2.5vw,30px);font-weight:800;color:#fff;line-height:1.3;letter-spacing:-.02em;">A base que forma. O método que aprova. O mundo que se abre.</div>
+    <p style="font-size:13px;color:var(--muted);max-width:640px;margin:14px auto 0;line-height:1.7;">Expande "A aprovação começa na base" em três argumentos de venda distintos por etapa — mais defensável e impossível de copiar por concorrentes que só cobrem o Ensino Médio.</p>
+  </div>
+  <div class="arch-grid">
+    <div class="arch-card arch-1">
+      <div class="arch-num">Pilar 01</div>
+      <div class="arch-title">A base que forma.</div>
+      <div class="arch-segment">Educação Infantil · Fundamental I</div>
+      <ul class="arch-items">
+        <li class="arch-item">Acolhimento e desenvolvimento integral</li>
+        <li class="arch-item">Leitura, raciocínio e autonomia</li>
+        <li class="arch-item">Rotina, vínculo e acompanhamento próximo</li>
+        <li class="arch-item">Argumento: "Aqui seu filho aprende a aprender"</li>
+      </ul>
+    </div>
+    <div class="arch-card arch-2">
+      <div class="arch-num">Pilar 02</div>
+      <div class="arch-title">O método que aprova.</div>
+      <div class="arch-segment">Fundamental II · Ensino Médio</div>
+      <ul class="arch-items">
+        <li class="arch-item">Olimpíadas, simulados, redação e SSA</li>
+        <li class="arch-item">MD Medicina, MD ITA, Pré-College</li>
+        <li class="arch-item">Maior nota histórica SSA-1 PE (97.777)</li>
+        <li class="arch-item">Argumento: "Aqui a aprovação é consequência"</li>
+      </ul>
+    </div>
+    <div class="arch-card arch-3">
+      <div class="arch-num">Pilar 03</div>
+      <div class="arch-title">O mundo que se abre.</div>
+      <div class="arch-segment">High School · Internacional</div>
+      <ul class="arch-items">
+        <li class="arch-item">Diploma Internacional a partir do 9º ano</li>
+        <li class="arch-item">Aprovações em Pepperdine e Boulder</li>
+        <li class="arch-item">Inglês, repertório global e preparação para EUA</li>
+        <li class="arch-item">Argumento: "Aqui o Brasil não é o único destino"</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:16px 20px;font-size:13px;color:rgba(240,236,228,.8);line-height:1.7;">
+    💡 <strong style="color:var(--orange2);">Por que essa arquitetura?</strong> O Cognitivo e o GGE só vendem o Pilar 2. O Madre é o único com os três — e esse argumento de trajetória completa é mais difícil de copiar do que qualquer ranking.
+  </div>
 </section>
 
 <!-- ④ IDENTIDADE DE MARCA -->
@@ -907,6 +997,19 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
       <div class="copy-ex"><div class="copy-ctx">Nova Bio do Instagram</div><div class="copy-body">🏆 Maior nota SSA-1 da história de PE (97.777)<br>🧬 Top 2 Nordeste — Olimpíada de Biologia<br>🌎 Diploma Internacional | Aprovados nos EUA<br>📚 Ed. Infantil ao Médio · Desde 1973<br><strong>A aprovação começa na base ⬇</strong></div></div>
     </div>
   </div>
+
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Copy de alto impacto — testado pela análise estratégica</div>
+  <div class="g2" style="margin-bottom:16px;">
+    <div>
+      <div class="copy-ex"><div class="copy-ctx">Hero da homepage — novo</div><div class="copy-body"><strong>A base que forma. O método que aprova. O mundo que se abre.</strong><br><br>Do Infantil ao Ensino Médio, o Madre une acolhimento, excelência acadêmica e caminhos para grandes universidades no Brasil e no exterior.<br><br>→ Agende uma visita</div></div>
+      <div class="copy-ex"><div class="copy-ctx">Nova bio do Instagram — v2</div><div class="copy-body">Colégio Madre de Deus · Recife<br>Da base às grandes aprovações<br>Medicina · ITA · High School<br>Brasil e exterior · Desde 1973<br>Agende uma visita ↓</div></div>
+    </div>
+    <div>
+      <div class="copy-ex"><div class="copy-ctx">Campanha retenção — nova versão</div><div class="copy-body"><strong>O Ensino Médio não começa no 1º ano.</strong><br>Começa na base, no método, na rotina e em uma escola que já conhece a trajetória do seu filho.<br><br>— Alternativa mais propositiva do que "não troque quem te conhece"</div></div>
+      <div class="copy-ex"><div class="copy-ctx">Campanha High School Internacional</div><div class="copy-body"><strong>O mundo também é uma possibilidade.</strong><br>High School Internacional, preparação acadêmica e histórias reais de alunos aprovados no Brasil e no exterior.<br><br>→ Conheça o programa</div></div>
+    </div>
+  </div>
 </section>
 
 <!-- ⑦ CAMPANHA CRIATIVA -->
@@ -943,6 +1046,15 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
   <div class="obj-card"><div class="obj-question">"Será que meu filho não precisa de uma escola mais forte no Ensino Médio?"</div><div class="obj-response">O Ensino Médio do Madre é estruturado para grandes desafios — com MD Medicina, MD ITA, orientação, simulados e preparação para vestibulares. Além disso, conhecemos a trajetória do seu filho, o que permite acompanhamento mais preciso do que uma escola que o recebe sem histórico.</div></div>
   <div class="obj-card"><div class="obj-question">"O filho de um conhecido saiu e passou em tal faculdade."</div><div class="obj-response">Cada trajetória é única. O mais importante é avaliar onde seu filho será melhor acompanhado, onde sua história será conhecida e onde ele terá formação consistente. No Madre, transformamos a base construída em conquista — não em improviso de último ano.</div></div>
   <div class="obj-card"><div class="obj-question">"Tenho medo de ele ficar para trás em relação a escolas mais conteudistas."</div><div class="obj-response">O Madre trabalha conteúdo com seriedade, mas sem abrir mão de formação humana. A proposta não é fazer o aluno estudar mais, mas estudar melhor — com método, repertório e orientação. O SSA-1 histórico e as aprovações em UNICAMP e universidades americanas comprovam isso.</div></div>
+
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Novas iniciativas estratégicas</div>
+  <div class="idea-card"><div class="idea-num">1</div><div><div class="idea-name">Relatório Madre de Resultados — Anual</div><div class="idea-desc">Landing page + PDF publicado todo ano com: aprovações por universidade/curso/ano, alunos com longa trajetória no Madre, olimpíadas e premiações, resultados internacionais, evolução de desempenho e depoimentos. Principal ativo de prova social — base para site, anúncios, imprensa, reunião comercial e WhatsApp.</div><span class="idea-tag">Prova Social · Captação · Retenção</span></div></div>
+  <div class="idea-card"><div class="idea-num">2</div><div><div class="idea-name">Teste de Base Madre</div><div class="idea-desc">Simulado aberto para alunos do 8º e 9º ano de outras escolas. O resultado gera um boletim diagnóstico + conversa com a coordenação. Objetivo: aquisição qualificada — a família já chega com contexto do filho e o Madre demonstra competência antes da matrícula.</div><span class="idea-tag">Captação Qualificada · Funil</span></div></div>
+  <div class="idea-card"><div class="idea-num">3</div><div><div class="idea-name">MD Experience Day</div><div class="idea-desc">Evento por unidade com aula demonstrativa, tour, conversa com coordenação, exposição de projetos e encontro com pais atuais. Transforma a visita guiada em experiência de imersão — famílias decidem no ambiente, não em casa.</div><span class="idea-tag">Captação · Experiência</span></div></div>
+  <div class="idea-card"><div class="idea-num">4</div><div><div class="idea-name">Guia dos Pais do Ensino Médio</div><div class="idea-desc">Material rico para captura de leads: "Como escolher uma escola de Ensino Médio em Recife: 12 critérios que importam antes da matrícula." Captura pais em fase de pesquisa — antes de decidirem pelo Cognitivo, GGE ou Núcleo.</div><span class="idea-tag">Lead Gen · Topo de Funil</span></div></div>
+  <div class="idea-card"><div class="idea-num">5</div><div><div class="idea-name">Página Comparativa (sem atacar concorrentes)</div><div class="idea-desc">"Como escolher entre escola conteudista, escola tradicional e escola de formação completa." Captura pais que estão comparando Cognitivo, Núcleo, GGE e Madre — e posiciona o Madre como único que oferece formação completa (base + método + mundo).</div><span class="idea-tag">SEO · Meio de Funil</span></div></div>
+  <div class="idea-card"><div class="idea-num">6</div><div><div class="idea-name">Concierge de Matrículas no WhatsApp</div><div class="idea-desc">Fluxo com perguntas simples: série de interesse, unidade, objetivo da família, escola atual, melhor horário para visita. Depois atendimento humano. <strong style="color:var(--amber);">⚠️ LGPD:</strong> como envolve dados de crianças e adolescentes, o fluxo exige consentimento explícito, política de privacidade clara e cuidado com retargeting. A ANPD trata dados de menores como tema de alto risco e prioridade regulatória 2025–2026.</div><span class="idea-tag">WhatsApp · CRM · Conversão</span></div></div>
 </section>
 
 <!-- ⑧ FUNIL -->
@@ -965,6 +1077,30 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
     <div><div class="fl fl-b">FUNDO — Decisão</div><div class="fn">Fechar a matrícula</div><div class="fd">Pai convencido, falta o empurrão final.</div><br><span class="kchip">Fechamento &gt;35%</span><span class="kchip">Resp. &lt;30min</span><span class="kchip">NPS &gt;70</span></div>
     <div><div class="ft-title">Experiência de Fechamento</div><div class="ft">Processo de matrícula 100% online ou agendamento expresso em 24h</div><div class="ft">Bolsa de mérito para alunos de outras escolas com boas notas</div><div class="ft">Kit de boas-vindas físico enviado após matrícula</div></div>
     <div><div class="ft-title">CRM & Pós-venda</div><div class="ft">CRM básico (RD Station/HubSpot) — cada lead registrado, cada etapa rastreada</div><div class="ft">Follow-up automático WhatsApp para leads que não responderam em 48h</div><div class="ft">Programa de indicação: pais que indicam ganham desconto na mensalidade</div></div>
+  </div>
+  
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Funil corrigido — Lead não é matrícula</div>
+  <div style="background:var(--red-bg);border:1px solid var(--red-bd);border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:rgba(240,236,228,.85);">
+    ⚠️ <strong>Atenção:</strong> converter 50–80 leads em 15–32 matrículas (30–40%) é otimista se falamos de lead bruto. O correto é medir cada etapa separadamente — lead bruto não é qualificado, qualificado não é visita, visita não é matrícula.
+  </div>
+  <div style="margin-bottom:24px;">
+    <div class="funnel-stage"><div class="fs-name">⚡ Resposta no WhatsApp</div><div class="fs-meta">Primeiro contato após lead entrar</div><span class="fs-rate fs-ok">&lt; 5 min em horário comercial</span></div>
+    <div class="funnel-stage"><div class="fs-name">Lead bruto → Qualificado</div><div class="fs-meta">Série, unidade, objetivo, escola atual</div><span class="fs-rate fs-warn">50%–70%</span></div>
+    <div class="funnel-stage"><div class="fs-name">Qualificado → Visita agendada</div><div class="fs-meta">Confirmação de data + horário</div><span class="fs-rate fs-warn">25%–40%</span></div>
+    <div class="funnel-stage"><div class="fs-name">Visita realizada → Matrícula</div><div class="fs-meta">Decisão após experiência presencial</div><span class="fs-rate fs-ok">25%–45%</span></div>
+    <div class="funnel-stage"><div class="fs-name">Matrícula por indicação</div><div class="fs-meta">Medir separadamente — CAC próximo de zero</div><span class="fs-rate fs-ok">Rastrear</span></div>
+    <div class="funnel-stage"><div class="fs-name">CAC por matrícula</div><div class="fs-meta">Por unidade e por segmento (Infantil / Fund / EM)</div><span class="fs-rate fs-warn">Dashboard semanal</span></div>
+  </div>
+  <div style="background:var(--s2);border:1px solid var(--border2);border-radius:12px;padding:22px 26px;margin-bottom:20px;">
+    <div style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:14px;">WhatsApp como máquina de conversão — dados Brasil 2025</div>
+    <div class="g4" style="margin-bottom:14px;">
+      <div class="data-stat"><div class="data-val">97%</div><div class="data-label">acessam o WhatsApp pelo menos uma vez por dia</div></div>
+      <div class="data-stat"><div class="data-val">75%</div><div class="data-label">já contrataram algum serviço pelo aplicativo</div></div>
+      <div class="data-stat"><div class="data-val">69%</div><div class="data-label">consideram ótimo para comunicação com empresas</div></div>
+      <div class="data-stat"><div class="data-val">&lt;5min</div><div class="data-label">meta de resposta para não perder o lead quente</div></div>
+    </div>
+    <p style="font-size:12.5px;color:var(--muted);line-height:1.7;">O WhatsApp precisa sair de "canal de contato" e virar <strong style="color:var(--orange2);">máquina de conversão</strong>. Fluxo ideal: Google Ads / Meta Ads com CTA direto para WhatsApp → qualificação automática → atendimento humano → agendamento de visita → follow-up pós-visita.</p>
   </div>
   <div class="sep"></div>
   <div class="eyebrow" style="margin-bottom:14px;">Budget Indicativo — Fase Inicial (meses 1–3)</div>
@@ -1072,6 +1208,46 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
       <p style="font-size:13px;color:rgba(240,236,228,.85);line-height:1.7;"><strong style="color:#fca5a5;">O Cognitivo é o único com site aprovado.</strong> Isso explica parte da liderança em SEO orgânico — o pai que pesquisa "colégio medicina Recife" no Google vê o Cognitivo primeiro. Cada mês sem a correção do LCP é market share cedido ao principal concorrente.</p>
     </div>
   </div>
+  
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Contexto de mercado digital — Brasil 2026</div>
+  <div class="g4" style="margin-bottom:20px;">
+    <div class="data-stat"><div class="data-val">185M</div><div class="data-label">usuários de internet no Brasil (86,9% de penetração)</div></div>
+    <div class="data-stat"><div class="data-val">46M</div><div class="data-label">estudantes no Censo Escolar 2025 — queda de 1,08M vs 2024</div></div>
+    <div class="data-stat"><div class="data-val">516K</div><div class="data-label">alunos da rede privada em PE (24,3% do total estadual)</div></div>
+    <div class="data-stat"><div class="data-val">-2,3%</div><div class="data-label">matrículas na educação básica em 2025 — menos crescimento orgânico</div></div>
+  </div>
+  <div style="background:var(--amber-bg);border:1px solid var(--amber-bd);border-radius:10px;padding:14px 18px;margin-bottom:20px;font-size:13px;color:rgba(240,236,228,.85);">
+    ⚠️ <strong style="color:var(--amber);">Implicação estratégica:</strong> com queda de matrículas no mercado, o Madre não deve planejar apenas "captar mais" — deve <strong>roubar share dos concorrentes e reter melhor os alunos atuais</strong>. Crescimento orgânico de base demográfica diminuiu.
+  </div>
+  <div class="eyebrow" style="margin-bottom:14px;">Mix de canais recomendado</div>
+  <table class="media-table">
+    <thead><tr><th>Canal</th><th>Tipo de intenção</th><th>Audiência BR</th><th>Prioridade</th><th>Conteúdo</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Google Search</strong></td><td>Alta intenção — buscando escola</td><td>—</td><td><span class="badge b-red">Máxima</span></td><td>"colégio em Boa Viagem", "High School Recife", "colégio medicina Recife"</td></tr>
+      <tr><td><strong>Google Maps / GMB</strong></td><td>Local — fundo de funil</td><td>—</td><td><span class="badge b-red">Máxima</span></td><td>Perfil por unidade, fotos mensais, reviews, posts semanais, CTA de rota</td></tr>
+      <tr><td><strong>Meta Ads (IG+FB)</strong></td><td>Prova social e remarketing</td><td>147M</td><td><span class="badge b-red">Alta</span></td><td>Depoimentos, vídeos de pais e alunos, aprovações</td></tr>
+      <tr><td><strong>YouTube</strong></td><td>Conteúdo educacional e institucional</td><td>150M</td><td><span class="badge b-or">Média-Alta</span></td><td>Aulões, bastidores, documentários curtos de alunos e ex-alunos</td></tr>
+      <tr><td><strong>TikTok / Reels</strong></td><td>Alcance orgânico jovem</td><td>131M adultos</td><td><span class="badge b-or">Média</span></td><td>Bastidores, professores, rotina — linguagem natural, sem produção excessiva</td></tr>
+      <tr><td><strong>LinkedIn</strong></td><td>Pais executivos / internacionalização</td><td>90M membros</td><td><span class="badge b-or">Média</span></td><td>High School, liderança educacional, cases internacionais</td></tr>
+    </tbody>
+  </table>
+  <div style="background:var(--s2);border:1px solid var(--border2);border-radius:12px;padding:22px 26px;margin-bottom:20px;">
+    <div style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:12px;">Estratégia por unidade — Google My Business</div>
+    <p style="font-size:13px;color:rgba(240,236,228,.8);line-height:1.7;margin-bottom:12px;">Boa Viagem, Tamarineira e Dois Unidos têm jornadas de busca diferentes. Cada unidade precisa de execução local independente:</p>
+    <div class="g2">
+      <ul style="list-style:none;">
+        <li style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Página própria otimizada por unidade no site</li>
+        <li style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Perfil GMB completo com fotos reais atualizadas mensalmente</li>
+        <li style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">→</span>Posts semanais + Q&A + reviews respondidos</li>
+      </ul>
+      <ul style="list-style:none;">
+        <li style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>CTA de rota, ligação, WhatsApp e agendamento em cada perfil</li>
+        <li style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Campanhas de Google Ads segmentadas por bairro</li>
+        <li style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">→</span>Reviews de pais — meta mínima: nota &gt;4,5 em todas as unidades</li>
+      </ul>
+    </div>
+  </div>
   <div class="eyebrow" style="margin-bottom:12px;">Core Web Vitals — colegiomadrededeus.com.br</div>
   <div class="metrics">
     <div class="metric bad"><div class="mv">3,3s</div><div class="ml">LCP Mobile</div><div class="mb">✗ Meta: &lt;2,5s — REPROVADO</div></div>
@@ -1103,6 +1279,31 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
   <div class="rm"><div><div class="rp rp1">CRÍTICO</div><div class="rm-period">Dias 31–60</div><div class="rm-title">Lançamento da Campanha</div><div class="rm-owner">→ Marketing + Comercial</div></div><ul class="rm-tasks"><li class="rm-task">Lançar campanha institucional "A aprovação começa na base"</li><li class="rm-task">Lançar landing page e iniciar tráfego pago (Google Ads + Meta Ads)</li><li class="rm-task">Publicar série de depoimentos de ex-alunos</li><li class="rm-task">Fazer evento com pais do 7º, 8º e 9º — "Por que o EM começa antes do 1º ano?"</li><li class="rm-task">Implantar CRM (RD Station Starter) + fluxo automático WhatsApp</li><li class="rm-task">Iniciar monitoramento de objeções no atendimento comercial</li></ul></div>
   <div class="rm"><div><div class="rp rp2">IMPORTANTE</div><div class="rm-period">Dias 31–60</div><div class="rm-title">Retenção no EM</div><div class="rm-owner">→ Pedagógico + Marketing</div></div><ul class="rm-tasks"><li class="rm-task">Semana de imersão no Ensino Médio para alunos do 9º ano</li><li class="rm-task">Painel com ex-alunos aprovados — preferencialmente com longa trajetória no Madre</li><li class="rm-task">Aula-show com professores do EM para mostrar a força acadêmica da equipe</li><li class="rm-task">Simulado diagnóstico para alunos do 9º + plano individual de evolução</li><li class="rm-task">Reuniões individuais com famílias identificadas como "risco de saída"</li><li class="rm-task">Bolsa de mérito de 10% para alunos internos que ingressam no próprio EM</li></ul></div>
   <div class="rm"><div><div class="rp rp3">CONSOLIDAÇÃO</div><div class="rm-period">Dias 61–90</div><div class="rm-title">Escala e Consolidação</div><div class="rm-owner">→ Diretoria + Marketing</div></div><ul class="rm-tasks"><li class="rm-task">Lançar campanha específica da Zona Norte (Tamarineira + Dois Unidos)</li><li class="rm-task">Rodar campanha de rematrícula + captação simultâneas</li><li class="rm-task">"Dia do Aprovado Madre" — evento anual público com imprensa convidada</li><li class="rm-task">Release para Folha de PE, JC Online sobre OBB e aprovações internacionais</li><li class="rm-task">Mensurar: leads, visitas, matrículas, % retenção no 9º</li><li class="rm-task">Escalar budget de mídia paga para R$15–20k/mês no período de matrículas (ago–out)</li></ul></div>
+  
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Projeto Passagem Madre — Retenção do 7º ao EM</div>
+  <div style="background:var(--s2);border:1px solid var(--border2);border-radius:14px;padding:28px 32px;margin-bottom:20px;">
+    <p style="font-size:13px;color:rgba(240,236,228,.8);line-height:1.7;margin-bottom:18px;">A retenção no 9º ano chega tarde. O risco de saída começa no 7º — quando pais começam a pesquisar alternativas para o EM. O <strong style="color:var(--orange2);">Projeto Passagem Madre</strong> antecipa essa conversa em 2 anos.</p>
+    <div class="g2">
+      <div>
+        <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:10px;">Componentes do programa</div>
+        <div style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Diagnóstico acadêmico no 7º, 8º e 9º</div>
+        <div style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Encontro semestral com pais sobre o próximo ciclo</div>
+        <div style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Trilha "Como se preparar para Medicina / ITA / Internacional"</div>
+        <div style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--border2);"><span style="position:absolute;left:0;color:var(--orange);">→</span>Mentorias com alunos do EM — pares como referência</div>
+        <div style="font-size:13px;color:rgba(240,236,228,.8);padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:0;color:var(--orange);">→</span>Dashboard de risco de evasão por turma</div>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:10px;">Mensagem de retenção refinada</div>
+        <div style="background:var(--orange3);border:1px solid var(--orange4);border-radius:8px;padding:14px 16px;font-size:14px;color:var(--cream);font-style:italic;margin-bottom:12px;">"O próximo ciclo começa melhor quando a escola já conhece a trajetória do seu filho."</div>
+        <div style="font-size:12px;color:var(--muted);line-height:1.65;">Versão mais propositiva do que "não troque quem te conhece por quem te promete" — comunica valor sem soar defensivo.</div>
+        <div style="margin-top:14px;background:var(--s1);border-radius:8px;padding:12px 14px;">
+          <div style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);font-weight:700;margin-bottom:6px;">High School como frente separada</div>
+          <div style="font-size:12.5px;color:rgba(240,236,228,.8);line-height:1.65;">LP própria <code style="background:rgba(255,255,255,.08);padding:1px 6px;border-radius:4px;">/high-school-recife</code> · Campanha "Do Recife para universidades no Brasil e no mundo" · Guia para pais sobre diploma internacional · Canal LinkedIn para pais executivos e famílias expats</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="sep"></div>
   <div class="eyebrow" style="margin-bottom:20px;">Métricas — O que medir em cada frente</div>
   <div class="metrics-grid">
@@ -1206,6 +1407,33 @@ body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--cream)
   </div>
 
   <div class="sep"></div>
+  
+  <div class="sep"></div>
+  <div class="eyebrow" style="margin-bottom:16px;">Rebranding em duas velocidades</div>
+  <div style="background:var(--s2);border:1px solid var(--border2);border-radius:10px;padding:14px 18px;margin-bottom:16px;font-size:13px;color:rgba(240,236,228,.85);">
+    💡 Rebranding em escola mexe com memória afetiva. Se for abrupto, gera resistência de pais e ex-alunos. A recomendação é validar narrativa e melhorar conversão antes de mudar a identidade institucional.
+  </div>
+  <div class="two-speed">
+    <div class="speed-card speed-now">
+      <div class="speed-label">Agora — Refresh de Campanha</div>
+      <div class="speed-title">Refinar sem substituir</div>
+      <div class="speed-item">Paleta mais refinada — laranja sólido, sem degradê</div>
+      <div class="speed-item">Templates consistentes para IG, apresentações e materiais</div>
+      <div class="speed-item">Grid institucional e sistema tipográfico</div>
+      <div class="speed-item">Fotografia real — sem banco de imagens</div>
+      <div class="speed-item">Uso mais forte de "MADRE" e "MD" como protagonistas</div>
+      <div class="speed-item">Eliminação gradual do excesso de degradê</div>
+    </div>
+    <div class="speed-card speed-later">
+      <div class="speed-label">Depois — Rebranding Institucional</div>
+      <div class="speed-title">Mudar com evidência</div>
+      <div class="speed-item">Pesquisa com pais, alunos, ex-alunos e equipe interna</div>
+      <div class="speed-item">Teste de percepção antes de definir nova identidade</div>
+      <div class="speed-item">Brand book completo — logo, cores, tipo, voz, aplicações</div>
+      <div class="speed-item">Lançamento interno antes do externo</div>
+      <div class="speed-item">Substituição gradual dos materiais físicos</div>
+    </div>
+  </div>
   <div class="eyebrow" style="margin-bottom:20px;">Processo de Rebranding</div>
   <div class="process-steps">
     <div class="pstep"><div class="pnum">01</div><div class="ptitle2">Estratégia & Pesquisa</div><div class="pdur">3–4 semanas</div><div class="ptask">Validação do posicionamento com diretoria</div><div class="ptask">Pesquisa com 10–15 pais e ex-alunos sobre percepção atual</div><div class="ptask">Definição do brand territory</div><div class="ptask">Briefing criativo assinado</div></div>
